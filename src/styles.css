@@ -1,0 +1,44 @@
+/* Main style */
+@import url(assets/css/fonts.css);
+@import url(assets/css/variables.css);
+@import url(assets/css/containers.css);
+@import url(assets/css/texts.css);
+@import url(assets/css/modifers.css);
+@import url(assets/css/button.css);
+
+/* Layer Style */
+@import url(assets/css/navbar.css);
+@import url(assets/css/footer.css);
+
+/* Components style */
+@import url(assets/css/shapes.css);
+@import url(assets/css/banner.css);
+@import url(assets/css/cards.css);
+
+@import url(assets/css/simulator.css);
+@import url(assets/css/slider.css);
+@import url(assets/css/datepicker.css);
+@import url(assets/css/modals.css);
+@import url(assets/css/forms.css);
+@import url(assets/css/inputs.css);
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+ul, li, p, span {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}

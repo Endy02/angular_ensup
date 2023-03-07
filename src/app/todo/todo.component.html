@@ -1,0 +1,22 @@
+<div class="container">
+    <div class='container-full-width flex-full-center full-height'>
+        <div class='full-gutter full-height'>
+            <div class="flex-col-center">
+                <div class="separator"></div>
+                <div class="flex-row-center pad-b-xl">
+                    <input type="text" [(ngModel)]="title" />
+                    <button (click)="createTodo(title)">Ajouter</button>
+                </div>
+                <div *ngIf="todos.length > 0" class="flex-col-center" >
+                    <ul *ngFor="let item of todos; index as i">
+                        <li style="list-style: none;">
+                            <input type="text" [value]="item.title" (change)="updateTodo(item.id, $event)">
+                            {{ item.title }}
+                            <button (click)="deleteTodo(i)">Supprimer</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

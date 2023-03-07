@@ -1,0 +1,205 @@
+.card-cover{
+    width: 70%;
+}
+.card-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-wrapper{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.card{
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--bottom-shadow);
+    background-color: var(--regular-white);
+    border-radius: 10px;
+}
+.card-right{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    color: var(--dark-grey);
+}
+.card-left{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: var(--dark-grey);
+}
+.card-display{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: var(--bottom-shadow);
+    overflow: hidden;
+}
+.card-bg-win{
+    min-height: 60px;
+    color: var(--regular-white);
+}
+.card-blue{
+    background-color: var(--fun-blue);
+}
+.card-orange{
+    background-color: var(--cream-orange);
+}
+.card-grenn{
+    background-color: var(--cute-green);
+}
+.card-sand{
+    background-color: var(--weezy-sand);
+}
+.card-logo{
+    width: 50px;
+}
+.card-logo-large{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-logo-big{
+    width: 90px;
+}
+.card-img-logo{
+    width: 100%;
+    height: 100%;
+}
+.card-list-date{
+    color: var(--dark-grey);
+    letter-spacing: 2px;
+    padding-bottom: 25px;
+}
+.card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-content-left{
+    padding-left: 20px;
+}
+.card-content-right{
+    padding-right: 20px;
+}
+.fu-card-wrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fu-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--regular-white);
+    box-shadow: var(--bottom-shadow);
+    color: var(--dark-grey);
+    overflow: hidden;
+}
+.fu-card-left,
+.fu-card-right{
+    width: 50%;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fu-card-win-right{
+    clip-path: polygon(9% 0, 100% 0%, 100% 100%, 0% 100%);
+    color: var(--regular-white);
+    padding: 18px;
+}
+.fu-card-win-left{
+    clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
+    color: var(--regular-white);
+    padding: 18px;
+}
+.fu-orange{
+    background-color: var(--cream-orange);
+}
+.fu-blue{
+    background-color: var(--fun-blue);
+}
+.fu-sand{
+    background-color: var(--weezy-sand);
+}
+.fu-green{
+    background-color: var(--cute-green);
+}
+.fu-grey{
+    background-color: var(--dark-grey);
+}
+.fu-card-desc{
+    width: 80%;
+}
+.fu-card-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.fu-card-table-cell{
+    padding: 5px;
+    color: var(--dark-grey);
+    text-align: center;
+    border-bottom: 4px solid var(--dark-grey);
+}
+.fu-card-table-line{
+    height: 7vh;
+}
+.rank-card{
+    width: 80%;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: var(--bottom-shadow);
+    padding: 5px 15px;
+    background-color: var(--weezy-sand);
+}
+.rank-card-logo{
+    width: 60px;
+}
+
+@media screen and (max-width: 960px) {
+    .card-cover{
+        width: 100%;
+    }
+    .card-display{
+        display: none;
+    }
+    .fu-card-wrapper{
+        width: 100%;
+    }
+    .card-logo-big{
+        width: 60px;
+    }
+}
+
