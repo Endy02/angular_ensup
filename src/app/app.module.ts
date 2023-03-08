@@ -10,7 +10,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TodoComponent } from './todo/todo.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { MusicComponent } from './music/music.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,16 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     NotFoundComponent,
-    TodoComponent
+    TodoComponent,
+    MusicComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
